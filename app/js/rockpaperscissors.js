@@ -67,8 +67,9 @@ function playToFive() {
       } else if (getWinner(playerMove,computerMove) === 'computer') {
         computerWins += 1;
       }
-      console.log("Player chose " + playerMove + " while Computer chose " + computerMove + ". " + getWinner(playerMove,computerMove) + " won!" + '\n' + 'The score is currently ' + playerWins + ' to ' + computerWins + '.' + '\n');
-      alert("Score is " + playerWins + " to " + computerWins);
+      var results = "Player chose " + playerMove + " while Computer chose " + computerMove + ". " + '\n' + getWinner(playerMove,computerMove) + " won!" + '\n' + 'The score is currently ' + playerWins + ' to ' + computerWins + '.';
+      console.log(results + '\n');
+      alert(results);
     }
     return [playerWins, computerWins];
 }
@@ -86,8 +87,10 @@ function playToX(max) {
       } else if (getWinner(playerMove,computerMove) === 'computer') {
         computerWins += 1;
       }
-      console.log("Player chose " + playerMove + " while Computer chose " + computerMove + ". " + getWinner(playerMove,computerMove) + " won!" + '\n' + 'The score is currently ' + playerWins + ' to ' + computerWins + '.' + '\n');
-      alert("Score is " + playerWins + " to " + computerWins);
+      var results = "Player chose " + playerMove + " while Computer chose " + computerMove + ". " + '\n' + getWinner(playerMove,computerMove) + " won!" + '\n' + 'The score is currently ' + playerWins + ' to ' + computerWins + '.';
+      console.log(results + '\n');
+      alert(results);
     }
     return [playerWins, computerWins];
 }
+playToFive();
